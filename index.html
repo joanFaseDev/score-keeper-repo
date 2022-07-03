@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Josefin Sans Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <h1>Ping Pong Score Keeper</h1>
+        <!-- Section Image -->
+        <figure class="container__figure">
+          <img
+            src="pong-image.jpg"
+            alt="Photo of a pair of ping-pong rackets"
+          />
+          <figurecaption class="container__figurecaption"
+            >Photo by
+            <a
+              class="container__links"
+              href="https://unsplash.com/@likeffer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Lisa Keffer</a
+            >
+            on
+            <a
+              class="container__links"
+              href="https://unsplash.com/s/photos/ping-pong?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </figurecaption>
+        </figure>
+        <!-- Section Score -->
+        <div class="container__score">
+          <h2 class="score">
+            <span class="score-player1">0</span> to
+            <span class="score-player2">0</span>
+          </h2>
+          <p class="score-rule">Use the buttons below to keep score.</p>
+          <fieldset class="container__fieldset">
+            <label class="container__fieldset__label" for="game-mode"
+              >Playing To</label
+            >
+            <select
+              name="mode"
+              id="game-mode"
+              class="container-fieldset__rules"
+            >
+              <option value="">Choose your win condition</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </fieldset>
+        </div>
+        <div class="container-buttons">
+          <button class="button" id="btn-player1">+1 Player One</button
+          ><button class="button" id="btn-player2">+1 Player Two</button
+          ><button class="button" id="reset">Reset</button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
